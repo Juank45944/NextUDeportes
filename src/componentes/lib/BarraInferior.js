@@ -3,21 +3,21 @@ import { View, TouchableOpacity } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-const BarraInferior = (props) => {
+const BarraInferior = () => {
     const { contenedor, item } = styles;
     return (
         <View style={contenedor}>
-            <TouchableOpacity style={item} onPress={() => Actions.Inicio()}>
-                <Icon name={props.primero} size={35} color="#fff" />
+            <TouchableOpacity style={item} onPress={() => Actions.first()}>
+                <Icon name='ios-home' size={25} color="#fff" />
             </TouchableOpacity>
-            <TouchableOpacity style={item} onPress={() => Actions.Periodicos()}>
-                <Icon name={props.segundo} size={35} color="#fff" />
+            <TouchableOpacity style={item} onPress={() => Actions.futbol()}>
+                <Icon name='ios-football' size={25} color="#fff" />
             </TouchableOpacity>
-            <TouchableOpacity style={item} onPress={() => Actions.Acciones()}>
-                <Icon name={props.tercero} size={35} color="#fff" />
+            <TouchableOpacity style={item} onPress={() => Actions.baloncesto()}>
+                <Icon name='ios-basketball' size={25} color="#fff" />
             </TouchableOpacity>
-            <TouchableOpacity style={item} onPress={() => Actions.Login()}>
-                <Icon name={props.cuarto} size={35} color="#fff" />
+            <TouchableOpacity style={item} onPress={() => Actions.apuestas()}>
+                <Icon name='ios-cash' size={25} color="#fff" />
             </TouchableOpacity>
         </View>
     );
@@ -25,9 +25,9 @@ const BarraInferior = (props) => {
 
 const styles = {
     contenedor: {
-        height: 67,
+        height: 47,
         backgroundColor: '#000',
-        flexDirection: 'row',
+        flexDirection: 'row'
     },
     item: {
         flex: 1,

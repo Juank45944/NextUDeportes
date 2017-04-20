@@ -6,5 +6,5 @@ export * from './Boton';
 export * from './Input';
 export * from './Spinner';
 export * from './Titulo';
-
+export * from './Lista';
 
